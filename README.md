@@ -37,9 +37,7 @@ This means that you don't have to select your GP4 Location every time.
 ChangeLog:
 ----------------------------
 28th October 2015 - 2.0 Release:
- - Complete program rebuild after source was lost (along with many other things) in a HDD crash at the end of 
-
-August.
+ - Complete program rebuild after source was lost (along with many other things) in a HDD crash at the end of August.  
  - Compatible with v1.1 .ini files.
  - Written as a Windows Presentation Foundation (WPF) program, rather than the old Windows Forms (WinForms).
    - WPF is, by all accounts, better than WinForms for a variety of reasons and I decided that this was a good time
