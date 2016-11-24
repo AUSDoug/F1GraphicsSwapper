@@ -66,8 +66,6 @@ Smart Arab, for the INI reading functionality: http://www.smart-arab.com/2013/05
 Regards,
 AUS_Doug
 
-"Always you shall be in the front rank, a burning brand to your enemies, a brilliant fire to your friends.
-Yours is a restless life, and never shall you know peace, though you shall be blessed for the peace that you bring 
-
-to others.
+"Always you shall be in the front rank, a burning brand to your enemies, a brilliant fire to your friends.  
+Yours is a restless life, and never shall you know peace, though you shall be blessed for the peace that you bring to others.  
 Take comfort in the fact that, though you stand tall and alone, others take shelter in the shadow that you cast."
