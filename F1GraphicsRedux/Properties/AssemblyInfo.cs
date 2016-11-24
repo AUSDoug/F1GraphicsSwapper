@@ -11,7 +11,7 @@ using System.Windows;
 [assembly: AssemblyDescription("Program to quickly switch between Grand Prix 4 'f1graphics'-style .cfg files.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("F1GraphicsRedux")]
+[assembly: AssemblyProduct("F1 Graphics Redux")]
 [assembly: AssemblyCopyright("Copyright © Douglas Spangenberg  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -51,5 +51,5 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.0.0.1")]
-[assembly: AssemblyFileVersion("2.0.0.1")]
+[assembly: AssemblyVersion("2.0.0.2")]
+[assembly: AssemblyFileVersion("2.0.0.2")]
