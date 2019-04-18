@@ -34,7 +34,7 @@ using IO = System.IO;
 //along with this program.If not, see<http://www.gnu.org/licenses/>.
 
 //In relation specifically to use for the Grand Prix series of games by Microprose,
-//this program (both source code and compiled .exe) are subject to the GrandPrixGames.org permission policy.
+//this program (both source code and binary) are subject to the GrandPrixGames.org permission policy.
 //You should have received a copy of this policy with the program. If not, see <https://www.grandprixgames.org/read.php?4,1010656>
 
 namespace F1GraphicsRedux
@@ -49,6 +49,13 @@ namespace F1GraphicsRedux
 
         //Dialog for getting the GP4 Path from the user.
         WinForms.FolderBrowserDialog folderBrowserDialog1 = new WinForms.FolderBrowserDialog();
+
+        public WinForms.FolderBrowserDialog GetFolderBrowserDialog1() => folderBrowserDialog1;
+
+        public void SetFolderBrowserDialog1(WinForms.FolderBrowserDialog value)
+        {
+            folderBrowserDialog1 = value;
+        }
 
         public MainWindow()
         {
@@ -69,12 +76,12 @@ namespace F1GraphicsRedux
 
         //'GP4 Path' Button
         private void button1_Click(object sender, RoutedEventArgs e)
-        {          
-            WinForms.DialogResult dialogResult = this.folderBrowserDialog1.ShowDialog();
+        {
+            WinForms.DialogResult dialogResult = GetFolderBrowserDialog1().ShowDialog();
 			if (dialogResult == WinForms.DialogResult.OK)
 			{
-                this.textBox1.Text = this.folderBrowserDialog1.SelectedPath;            
-                Console.WriteLine("Selected Folder Is " + this.textBox1.Text);
+                textBox1.Text = GetFolderBrowserDialog1().SelectedPath;            
+                Console.WriteLine("Selected Folder Is " + textBox1.Text);
 			}
             
         }
@@ -89,13 +96,13 @@ namespace F1GraphicsRedux
                 return;
             }
             //Make sure a .cfg is selected
-            if (this.comboBox1.SelectedItem == null)
+            if (comboBox1.SelectedItem == null)
             {
                 MessageBox.Show("No .cfg selected");
                 return;
             }
             //Check if the file being swapped is actually the current f1graphics file.
-            if (!this.comboBox1.SelectedItem.ToString().Contains("f1graphics.cfg"))
+            if (!comboBox1.SelectedItem.ToString().Contains("f1graphics.cfg"))
             {
                 //Get the Path as a String, to make it easier to refer to.
                 string text = this.textBox1.Text;
